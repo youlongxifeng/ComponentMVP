@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'androidx.appcompat:appcompat:1.2.0'
+    api 'com.google.android.material:material:1.2.1'
+    api 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+ 
+    api 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    api 'io.reactivex.rxjava3:rxjava:3.0.12'
+
+    //network
+    api 'com.squareup.okhttp3:okhttp:4.9.1'
+    // define any required OkHttp artifacts without version
+    api 'com.squareup.okhttp3:okhttp'
+    api 'com.squareup.okhttp3:logging-interceptor'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+
+
+    //https://github.com/Ereza/CustomActivityOnCrash
+    api 'cat.ereza:customactivityoncrash:2.3.0'
+
+    api rootProject.ext.dependencies["converter-gson"]
+    api rootProject.ext.dependencies["adapter-rxjava"]
+    api rootProject.ext.dependencies["logging-interceptor"]
+    api rootProject.ext.dependencies["gson"]
+
+    //动态替换BaseUrl库 使用可参考 https://github.com/JessYanCoding/RetrofitUrlManager
+    api 'me.jessyan:retrofit-url-manager:1.4.0'
+
+    api 'com.kunminx.archi:unpeek-livedata:4.4.1-beta1'
+
+    api 'com.alibaba:arouter-api:1.5.1'
+    api 'com.alibaba:arouter-annotation:1.0.6'
+
+    //https://github.com/TanZhiL/OkAspectj Android面向切面编程
+    api 'org.aspectj:aspectjrt:1.9.6'
+    api 'com.github.TanZhiL.OkAspectj:okaspectj:1.1.5'
+
+}

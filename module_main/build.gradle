@@ -1,0 +1,14 @@
+apply from: "../module.build.gradle"
+apply plugin: 'com.xtc.thomas.okaspectj'
+android {
+    defaultConfig {
+        if (isModule.toBoolean()) {
+            applicationId rootProject.ext.android.applicationId
+        }
+    }
+}
+
+dependencies {
+    implementation project(':module_home')
+    implementation project(':lib_network')
+}

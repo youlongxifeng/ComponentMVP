@@ -4,6 +4,17 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ComponentMVP.iml" filepath="$PROJECT_DIR$/.idea/modules/ComponentMVP.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ComponentMVP.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ComponentMVP.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fragmentation/ComponentMVP.fragmentation.iml" filepath="$PROJECT_DIR$/.idea/modules/fragmentation/ComponentMVP.fragmentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fragmentation_swipeback/ComponentMVP.fragmentation_swipeback.iml" filepath="$PROJECT_DIR$/.idea/modules/fragmentation_swipeback/ComponentMVP.fragmentation_swipeback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_network/ComponentMVP.lib_network.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_network/ComponentMVP.lib_network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_third/ComponentMVP.lib_third.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_third/ComponentMVP.lib_third.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library_common/ComponentMVP.library_common.iml" filepath="$PROJECT_DIR$/.idea/modules/library_common/ComponentMVP.library_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_home/ComponentMVP.module_home.iml" filepath="$PROJECT_DIR$/.idea/modules/module_home/ComponentMVP.module_home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_main/ComponentMVP.module_main.iml" filepath="$PROJECT_DIR$/.idea/modules/module_main/ComponentMVP.module_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_project/ComponentMVP.module_project.iml" filepath="$PROJECT_DIR$/.idea/modules/module_project/ComponentMVP.module_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_public/ComponentMVP.module_public.iml" filepath="$PROJECT_DIR$/.idea/modules/module_public/ComponentMVP.module_public.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_square/ComponentMVP.module_square.iml" filepath="$PROJECT_DIR$/.idea/modules/module_square/ComponentMVP.module_square.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_user/ComponentMVP.module_user.iml" filepath="$PROJECT_DIR$/.idea/modules/module_user/ComponentMVP.module_user.iml" />
     </modules>
   </component>
 </project>
