@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -78,6 +79,7 @@ abstract public class SupportFragment extends Fragment implements ISupportFragme
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mDelegate.onCreate(savedInstanceState);
+
     }
 
     @Override
@@ -368,6 +370,10 @@ abstract public class SupportFragment extends Fragment implements ISupportFragme
     public void popToChild(Class<?> targetFragmentClass, boolean includeTargetFragment, Runnable afterPopTransactionRunnable) {
         mDelegate.popToChild(targetFragmentClass, includeTargetFragment, afterPopTransactionRunnable);
     }
+
+
+
+
 
     /**
      * 得到位于栈顶Fragment

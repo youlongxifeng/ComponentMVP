@@ -31,10 +31,19 @@ public interface Constants {
             String F_PLAY_RADIIO = "/home/play/radio";
             String F_ANNOUNCER_DETAIL = "/home/announcer/detail";
         }
-
+        interface Project {
+            String F_MAIN = "/project/main";
+            String F_MESSAGE = "/project/message";
+            String F_INTEGRAL="/project/integral";
+        } interface Square {
+            String F_MAIN = "/square/main";
+            String F_MESSAGE = "/square/message";
+            String F_INTEGRAL="/square/integral";
+        }
         interface User {
             String F_MAIN = "/user/main";
             String F_MESSAGE = "/user/message";
+            String F_INTEGRAL="/user/integral";
         }
 
         interface Discover {

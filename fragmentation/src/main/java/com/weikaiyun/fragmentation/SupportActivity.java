@@ -256,4 +256,11 @@ abstract public class SupportActivity extends AppCompatActivity implements ISupp
     public void setDefaultFragmentBackground(@DrawableRes int backgroundRes) {
         mDelegate.setDefaultFragmentBackground(backgroundRes);
     }
+
+    /**
+     * start other BrotherFragment
+     */
+    public void startBrotherFragment(ISupportFragment targetFragment) {
+
+    }
 }

@@ -11,6 +11,7 @@ import androidx.multidex.MultiDexApplication;
 
 import com.alc.library_common.lifecycle.ApplicationObserver;
 import com.alc.xdt.lib_third.third.ThirdHelper;
+import com.weikaiyun.fragmentation.Fragmentation;
 
 /**
  * @Title:
@@ -42,6 +43,11 @@ public class BaseApplication  extends MultiDexApplication implements ViewModelSt
                 //  .initBugly(false)
                 .initCrashView();
         //    .initUM();
+        Fragmentation.builder()
+                // 设置 栈视图 模式为 （默认）悬浮球模式   SHAKE: 摇一摇唤出  NONE：隐藏， 仅在Debug环境生效
+                .stackViewMode(Fragmentation.BUBBLE)
+                .debug(true) // 实际场景建议.debug(BuildConfig.DEBUG)
+                .install();
     }
 
     @NonNull

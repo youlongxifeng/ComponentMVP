@@ -1,5 +1,7 @@
 package com.alc.xdt.module_main.ui.fragment.main;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -27,9 +29,33 @@ public class MainFragmentStateAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        return (Fragment) ARouter.getInstance().build(Constants.Router.Home.F_MAIN)
-                .navigation();
-        //return new DemoFragment();
+        Fragment fragment = null;
+        Log.i("YYY","createFragment==="+position);
+        if (position == 0) {
+            fragment = (Fragment) ARouter.getInstance().build(Constants.Router.Home.F_MAIN)
+                    .navigation();
+
+        } else if (position == 1) {
+            fragment = (Fragment) ARouter.getInstance().build(Constants.Router.Project.F_MAIN)
+                    .navigation();
+            return fragment;
+        } else if (position == 2) {
+            fragment = (Fragment) ARouter.getInstance().build(Constants.Router.Square.F_MAIN)
+                    .navigation();
+
+        } else if (position == 3) {
+            fragment = (Fragment) ARouter.getInstance().build(Constants.Router.User.F_MAIN)
+                    .navigation();
+
+        } else {
+            fragment = (Fragment) ARouter.getInstance().build(Constants.Router.User.F_MAIN)
+                    .navigation();
+
+
+        }
+        return fragment;
+//        return  (Fragment) ARouter.getInstance().build(Constants.Router.Home.F_MAIN)
+//                .navigation();
     }
 
     @Override
