@@ -8,22 +8,22 @@
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginEnd="8dp"
         android:background="#009688"
         android:gravity="center"
         android:text="我的项目"
-        android:textSize="@dimen/dp_40"
+        android:textSize="40dp"
         android:textColor="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
 
     <TextView
-        android:id="@+id/tv_jump_extend"
+        android:id="@+id/tv_jump_project"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_marginTop="@dimen/dp_72"
+        android:layout_marginTop="72dp"
         android:background="@color/blue"
         android:gravity="center"
         android:text="跳转到下一个页面"

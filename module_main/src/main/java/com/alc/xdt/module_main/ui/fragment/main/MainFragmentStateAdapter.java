@@ -46,7 +46,6 @@ public class MainFragmentStateAdapter extends FragmentStateAdapter {
         } else if (position == 3) {
             fragment = (Fragment) ARouter.getInstance().build(Constants.Router.User.F_MAIN)
                     .navigation();
-
         } else {
             fragment = (Fragment) ARouter.getInstance().build(Constants.Router.User.F_MAIN)
                     .navigation();

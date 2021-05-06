@@ -4,7 +4,6 @@ import com.alc.library_common.base.BaseSupportFragment;
 import com.alc.library_common.common.Constants;
 import com.alc.module_project.R;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.weikaiyun.fragmentation.SupportFragment;
 
 /**
  * @Title:
